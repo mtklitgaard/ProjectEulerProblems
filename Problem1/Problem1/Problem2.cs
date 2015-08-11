@@ -12,7 +12,7 @@ namespace Problems
         {
             var firstSequence = 1;
             var secondSequence = 2;
-            var nextSequence = 0; 
+            int nextSequence; 
 
             var numbers = new List<int> { secondSequence};
             do
@@ -24,6 +24,7 @@ namespace Problems
                 }
                 firstSequence = secondSequence;
                 secondSequence = nextSequence;
+
             } while (nextSequence < topNumber);
 
             return numbers.Sum();
