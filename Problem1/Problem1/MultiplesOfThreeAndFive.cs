@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem1
+{
+    public class MultiplesOfThreeAndFive
+    {
+        public int GetSumOfMultiples(int naturalNumber)
+        {
+            var multiples = new List<int>();
+
+            for (int index = 1; index < naturalNumber; index++)
+            {
+                if (index%3 == 0)
+                {
+                    multiples.Add(index);
+                }
+                else if (index%5 == 0)
+                {
+                    multiples.Add(index);
+                }
+            }
+
+            return multiples.Sum();
+        }
+    }
+}
