@@ -20,8 +20,8 @@ namespace Problems.Tests
         [InlineData(1000, 233168)]
         public void GetMultiplesOfThreeAndFive_ReturnsCorrectMultiples(int naturalNumber, int expected)
         {
-            var multiplesOfThreeAndFive = new Problem1();
-            var actual = multiplesOfThreeAndFive.GetSumOfMultiples(naturalNumber);
+            var classUnderTests = new Problem1();
+            var actual = classUnderTests.GetSumOfMultiples(naturalNumber);
 
             Assert.Equal(expected, actual);
         }
