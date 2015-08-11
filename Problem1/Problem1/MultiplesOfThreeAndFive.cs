@@ -14,11 +14,7 @@ namespace Problem1
 
             for (int index = 1; index < naturalNumber; index++)
             {
-                if (index%3 == 0)
-                {
-                    multiples.Add(index);
-                }
-                else if (index%5 == 0)
+                if (index%3 == 0 || index%5 == 0)
                 {
                     multiples.Add(index);
                 }
