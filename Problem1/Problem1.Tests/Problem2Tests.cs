@@ -14,13 +14,16 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
     public class Problem2Tests
     {
-        [Fact]
-        public void ReturnsCorrectEvenNumberFibonacci_WhenTopNumberIs89()
+        [Theory]
+        [InlineData(2, 2)]
+        [InlineData(10, 10)]
+        [InlineData(89, 44)]
+        [InlineData(4000000, 4613732)]
+        public void ReturnsCorrectEvenNumberFibonacciSum(int topNumber, int expected)
         {
             var classUnderTest = new Problem2();
-            var expected = new List<int> {2, 8, 34};
 
-            var actual = classUnderTest.GetFibonacciSequence(89);
+            var actual = classUnderTest.GetFibonacciSequence(topNumber);
 
             Assert.Equal(expected,actual);
         }

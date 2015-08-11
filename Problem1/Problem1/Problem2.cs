@@ -8,7 +8,7 @@ namespace Problems
 {
     public class Problem2
     {
-        public List<int> GetFibonacciSequence(int topNumber)
+        public int GetFibonacciSequence(int topNumber)
         {
             var firstSequence = 1;
             var secondSequence = 2;
@@ -26,7 +26,7 @@ namespace Problems
                 secondSequence = nextSequence;
             } while (nextSequence < topNumber);
 
-            return numbers;
+            return numbers.Sum();
         }
     }
 }
