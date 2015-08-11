@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Problem1
+namespace Problems
 {
-    public class MultiplesOfThreeAndFive
+    public class Problem1
     {
         public int GetSumOfMultiples(int naturalNumber)
         {
